@@ -35,4 +35,22 @@ var perfumes = [
     tipo:"Suave",
 }
 ];
+    /* criando a funcão  */
+function escrever_no_html() {
+    let div_perfumes = document.querySelector("#div_perfumes");
+    let lista_perfumes = document.querySelector("#lista_perfumes");
 
+
+   for (var i = 0 ; i < perfumes.length; i++){
+
+    /* criando o item da lista*/
+    const item = document.createElement("li");
+
+    /* crinado texto do li e colocando o texto como filho*/
+    const texto = document.createTextNode(perfumes[i].nome)
+    item.appendChild(texto)
+    lista_perfumes.appendChild(item)
+   }
+ }
+
+ escrever_no_html()

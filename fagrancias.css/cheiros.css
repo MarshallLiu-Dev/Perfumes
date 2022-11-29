@@ -1,0 +1,12 @@
+*{
+    flex:0.3;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.perfumes{
+    display: flex;
+    align-items: center;
+}
